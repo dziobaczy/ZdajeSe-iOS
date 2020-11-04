@@ -15,7 +15,9 @@ struct ExamsView: View {
         NavigationView {
             List {
                 ForEach(examsViewModel.examsOverviews) { examOverview in
-                    Text(examOverview.title)
+                    NavigationLink(destination: QuestionsList(questionsViewModel: .init(withExamId: examOverview.id))) {
+                        Text(examOverview.title)
+                    }
                 }
             }
             .navigationTitle("Generatory 3.0")

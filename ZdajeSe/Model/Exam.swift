@@ -17,3 +17,7 @@ struct Exam: Codable, Identifiable {
         case id, title
     }
 }
+
+extension Exam {
+    static let mock = Exam(title: "Administrowanie bazami danych (ABD)", id: "abd", questions: [.mockABD_1])
+}

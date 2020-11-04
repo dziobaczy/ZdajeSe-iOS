@@ -10,5 +10,6 @@ import SwiftUI
 extension Color {
     
     static let mainBackground = Color("Background")
+    static let accent = Color("Accent")
     
 }
