@@ -12,10 +12,13 @@ struct ExamsView: View {
     @ObservedObject var examsViewModel: ExamsViewModel
     
     var body: some View {
-        List {
-            ForEach(examsViewModel.examsOverviews) { examOverview in
-                Text(examOverview.title)
+        NavigationView {
+            List {
+                ForEach(examsViewModel.examsOverviews) { examOverview in
+                    Text(examOverview.title)
+                }
             }
+            .navigationTitle("Generatory 3.0")
         }
     }
 }

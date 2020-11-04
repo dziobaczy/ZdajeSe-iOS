@@ -24,6 +24,7 @@
 		8A8DC41F2553316800603B7E /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A8DC41D2553316800603B7E /* index.json */; };
 		8A8DC428255334A600603B7E /* ExamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC427255334A600603B7E /* ExamsView.swift */; };
 		8A8DC42D2553356C00603B7E /* ExamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC42C2553356C00603B7E /* ExamsViewModel.swift */; };
+		8A8DC432255338DA00603B7E /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC431255338DA00603B7E /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8A8DC41D2553316800603B7E /* index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
 		8A8DC427255334A600603B7E /* ExamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsView.swift; sourceTree = "<group>"; };
 		8A8DC42C2553356C00603B7E /* ExamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsViewModel.swift; sourceTree = "<group>"; };
+		8A8DC431255338DA00603B7E /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				8A8DC413255330DF00603B7E /* Bundle+Extensions.swift */,
+				8A8DC431255338DA00603B7E /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				8A8DC3DE2552989600603B7E /* Agent.swift in Sources */,
 				8A8DC40B25532B4500603B7E /* Comment.swift in Sources */,
 				8A50090C254DC4F400C98A58 /* ZdajeSeApp.swift in Sources */,
+				8A8DC432255338DA00603B7E /* Color+Extension.swift in Sources */,
 				8A8DC42D2553356C00603B7E /* ExamsViewModel.swift in Sources */,
 				8A8DC428255334A600603B7E /* ExamsView.swift in Sources */,
 				8A8DC3EE2553290000603B7E /* ExamsProvidable.swift in Sources */,
