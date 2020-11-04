@@ -3,6 +3,10 @@
       {
         "title": "Hurtownie danych i aplikacje OLAP (HUR)",
         "id": "hur"
-      }
+      },
+      {
+        "title": "Aplikacje Baz Danych (APBD)",
+        "id": "apbd"
+      },
   ]
 }

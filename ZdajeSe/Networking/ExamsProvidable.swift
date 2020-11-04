@@ -43,7 +43,7 @@ struct LocalStore: ExamsProvidable {
     }
     
     func getExamDetails(forExamId exam: String) -> AnyPublisher<Exam, ZSError> {
-        let hurExam = bundle.decode(Exam.self, from: "hur.json")
+        let hurExam = bundle.decode(Exam.self, from: "\(exam).json")
         return Just(hurExam)
             .mapError({ failure -> ZSError in
                 .networkError(message: "Couldn't fetch file from bundle")

@@ -28,6 +28,7 @@
 		8A8DC4372553454D00603B7E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC4362553454D00603B7E /* QuestionView.swift */; };
 		8A8DC43C255349AA00603B7E /* QuestionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC43B255349AA00603B7E /* QuestionsList.swift */; };
 		8A8DC441255349D100603B7E /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC440255349D100603B7E /* QuestionsViewModel.swift */; };
+		8A8DC4462553512100603B7E /* apbd.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A8DC4452553512100603B7E /* apbd.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		8A8DC4362553454D00603B7E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		8A8DC43B255349AA00603B7E /* QuestionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsList.swift; sourceTree = "<group>"; };
 		8A8DC440255349D100603B7E /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		8A8DC4452553512100603B7E /* apbd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apbd.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				8A8DC41C2553316800603B7E /* hur.json */,
+				8A8DC4452553512100603B7E /* apbd.json */,
 				8A8DC41D2553316800603B7E /* index.json */,
 			);
 			path = Data;
@@ -320,6 +323,7 @@
 			files = (
 				8A500913254DC4F600C98A58 /* Preview Assets.xcassets in Resources */,
 				8A500910254DC4F600C98A58 /* Assets.xcassets in Resources */,
+				8A8DC4462553512100603B7E /* apbd.json in Resources */,
 				8A8DC41F2553316800603B7E /* index.json in Resources */,
 				8A8DC41E2553316800603B7E /* hur.json in Resources */,
 			);
