@@ -11,7 +11,7 @@ import SwiftUI
 struct ZdajeSeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExamsView(examsViewModel: ExamsViewModel())
         }
     }
 }
