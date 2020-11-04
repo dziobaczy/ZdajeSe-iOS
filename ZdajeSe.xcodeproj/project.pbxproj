@@ -29,6 +29,7 @@
 		8A8DC43C255349AA00603B7E /* QuestionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC43B255349AA00603B7E /* QuestionsList.swift */; };
 		8A8DC441255349D100603B7E /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC440255349D100603B7E /* QuestionsViewModel.swift */; };
 		8A8DC4462553512100603B7E /* apbd.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A8DC4452553512100603B7E /* apbd.json */; };
+		8A8DC44B2553561600603B7E /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC44A2553561600603B7E /* CommentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8A8DC43B255349AA00603B7E /* QuestionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsList.swift; sourceTree = "<group>"; };
 		8A8DC440255349D100603B7E /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
 		8A8DC4452553512100603B7E /* apbd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apbd.json; sourceTree = "<group>"; };
+		8A8DC44A2553561600603B7E /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				8A8DC4362553454D00603B7E /* QuestionView.swift */,
 				8A8DC43B255349AA00603B7E /* QuestionsList.swift */,
 				8A8DC440255349D100603B7E /* QuestionsViewModel.swift */,
+				8A8DC44A2553561600603B7E /* CommentView.swift */,
 			);
 			path = Exams;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				8A8DC4372553454D00603B7E /* QuestionView.swift in Sources */,
 				8A50090C254DC4F400C98A58 /* ZdajeSeApp.swift in Sources */,
 				8A8DC432255338DA00603B7E /* Color+Extension.swift in Sources */,
+				8A8DC44B2553561600603B7E /* CommentView.swift in Sources */,
 				8A8DC42D2553356C00603B7E /* ExamsViewModel.swift in Sources */,
 				8A8DC441255349D100603B7E /* QuestionsViewModel.swift in Sources */,
 				8A8DC428255334A600603B7E /* ExamsView.swift in Sources */,

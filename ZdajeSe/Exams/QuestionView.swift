@@ -10,6 +10,20 @@ import SwiftUI
 struct QuestionView: View {
     
     @State var question: Question
+    @State var isCommentsSectionExpanded: Bool = false
+    
+    var commentsDescription: String {
+        guard let comments = question.comments else { return "0 komentarzy" }
+        if comments.count == 1 {
+            return "1 komentarz"
+        } else {
+            return "\(comments.count) komentarzy"
+        }
+    }
+    
+    var isCommentsButtonEnabled: Bool {
+        question.comments != nil
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -26,6 +40,20 @@ struct QuestionView: View {
                         .font(Font.title3.bold())
                 }
                 .padding(.bottom, 8)
+            }
+            Button(action: { isCommentsSectionExpanded.toggle() }, label: {
+                Text(commentsDescription)
+                    .foregroundColor(isCommentsButtonEnabled ? .accent : .gray)
+            })
+            .buttonStyle(PlainButtonStyle())
+            .padding(.bottom, 8)
+            .disabled(!isCommentsButtonEnabled)
+            if isCommentsSectionExpanded {
+                ForEach(question.comments ?? []) { comment in
+                    CommentView(comment: comment)
+                        .padding(.bottom, 8)
+                }
+                .padding(.top, 14)
             }
         }
     }
