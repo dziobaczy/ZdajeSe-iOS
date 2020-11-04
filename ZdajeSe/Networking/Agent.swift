@@ -10,7 +10,7 @@ import Combine
 
 struct Agent {
     
-    private let urlSession: URLSession
+    let urlSession: URLSession
     
     struct Response<T: Decodable> {
         let value: T
