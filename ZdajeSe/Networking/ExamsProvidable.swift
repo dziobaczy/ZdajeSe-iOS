@@ -19,7 +19,37 @@ enum ZSError: Error, LocalizedError {
     }
 }
 
-protocol ExamsProvidable: class {
+protocol ExamsProvidable {
     func getExams() -> AnyPublisher<[ExamOverview], ZSError>
-    func getQuestions(forExamId exam: String) -> AnyPublisher<[Exam], ZSError>
+    func getExamDetails(forExamId exam: String) -> AnyPublisher<Exam, ZSError>
+}
+
+struct LocalStore: ExamsProvidable {
+    
+    private let bundle: Bundle
+    
+    init(bundle: Bundle = .main) {
+        self.bundle = bundle
+    }
+    
+    func getExams() -> AnyPublisher<[ExamOverview], ZSError> {
+        let examsOverviews = bundle.decode(ExamOverview.ExamResponseWrapper.self, from: "index.json")
+        return Just(examsOverviews)
+            .map(\.pages)
+            .mapError({ failure -> ZSError in
+                .networkError(message: "Couldn't fetch file from bundle")
+            })
+            .eraseToAnyPublisher()
+    }
+    
+    func getExamDetails(forExamId exam: String) -> AnyPublisher<Exam, ZSError> {
+        let hurExam = bundle.decode(Exam.self, from: "hur.json")
+        return Just(hurExam)
+            .mapError({ failure -> ZSError in
+                .networkError(message: "Couldn't fetch file from bundle")
+            })
+            .eraseToAnyPublisher()
+    }
+    
+    
 }

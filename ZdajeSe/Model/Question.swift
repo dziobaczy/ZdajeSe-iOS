@@ -9,7 +9,7 @@ import Foundation
 
 struct Question: Codable, Identifiable {
     let title: String
-    let id: String
+    let id: Int
     let answers: [Answer]
     
     enum CodingKeys: String, CodingKey {

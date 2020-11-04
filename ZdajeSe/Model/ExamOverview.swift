@@ -10,4 +10,8 @@ import Foundation
 struct ExamOverview: Codable, Identifiable {
     let title: String
     let id: String
+    
+    struct ExamResponseWrapper: Codable {
+        let pages: [ExamOverview]
+    }
 }
