@@ -14,6 +14,12 @@
 		8A50091E254DC4F600C98A58 /* ZdajeSeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50091D254DC4F600C98A58 /* ZdajeSeTests.swift */; };
 		8A500929254DC4F600C98A58 /* ZdajeSeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A500928254DC4F600C98A58 /* ZdajeSeUITests.swift */; };
 		8A8DC3DE2552989600603B7E /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC3DD2552989600603B7E /* Agent.swift */; };
+		8A8DC3EE2553290000603B7E /* ExamsProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC3ED255328FF00603B7E /* ExamsProvidable.swift */; };
+		8A8DC3F42553293800603B7E /* ExamOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC3F32553293800603B7E /* ExamOverview.swift */; };
+		8A8DC3FC2553297700603B7E /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC3FB2553297700603B7E /* Exam.swift */; };
+		8A8DC401255329A900603B7E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC400255329A900603B7E /* Question.swift */; };
+		8A8DC406255329B300603B7E /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC405255329B300603B7E /* Answer.swift */; };
+		8A8DC40B25532B4500603B7E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DC40A25532B4500603B7E /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		8A500928254DC4F600C98A58 /* ZdajeSeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZdajeSeUITests.swift; sourceTree = "<group>"; };
 		8A50092A254DC4F600C98A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8DC3DD2552989600603B7E /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		8A8DC3ED255328FF00603B7E /* ExamsProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsProvidable.swift; sourceTree = "<group>"; };
+		8A8DC3F32553293800603B7E /* ExamOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamOverview.swift; sourceTree = "<group>"; };
+		8A8DC3FB2553297700603B7E /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		8A8DC400255329A900603B7E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8A8DC405255329B300603B7E /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		8A8DC40A25532B4500603B7E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		8A50090A254DC4F400C98A58 /* ZdajeSe */ = {
 			isa = PBXGroup;
 			children = (
+				8A8DC3F22553291200603B7E /* Model */,
 				8A8DC3DC2552987F00603B7E /* Networking */,
 				8A50090B254DC4F400C98A58 /* ZdajeSeApp.swift */,
 				8A50090D254DC4F400C98A58 /* ContentView.swift */,
@@ -137,8 +150,21 @@
 			isa = PBXGroup;
 			children = (
 				8A8DC3DD2552989600603B7E /* Agent.swift */,
+				8A8DC3ED255328FF00603B7E /* ExamsProvidable.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		8A8DC3F22553291200603B7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A8DC3F32553293800603B7E /* ExamOverview.swift */,
+				8A8DC3FB2553297700603B7E /* Exam.swift */,
+				8A8DC400255329A900603B7E /* Question.swift */,
+				8A8DC405255329B300603B7E /* Answer.swift */,
+				8A8DC40A25532B4500603B7E /* Comment.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8DC3FC2553297700603B7E /* Exam.swift in Sources */,
+				8A8DC401255329A900603B7E /* Question.swift in Sources */,
 				8A50090E254DC4F400C98A58 /* ContentView.swift in Sources */,
+				8A8DC406255329B300603B7E /* Answer.swift in Sources */,
 				8A8DC3DE2552989600603B7E /* Agent.swift in Sources */,
+				8A8DC40B25532B4500603B7E /* Comment.swift in Sources */,
 				8A50090C254DC4F400C98A58 /* ZdajeSeApp.swift in Sources */,
+				8A8DC3EE2553290000603B7E /* ExamsProvidable.swift in Sources */,
+				8A8DC3F42553293800603B7E /* ExamOverview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
